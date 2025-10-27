@@ -23,7 +23,7 @@
 -->
 <html manifest="cyburphone.appcache">
 	<head>
-		<title>CyburPhone</title>
+		<title>ViciPhone - Talk IT Pro</title>
 		<link rel="stylesheet" href="<?php echo $layout; ?>" />
 		<meta http-equiv="Pragma" content="no-cache">
 		<meta http-equiv="Expires" content="-1">
