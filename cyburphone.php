@@ -71,13 +71,11 @@ $log_string .= "\t";
 if (!empty($_SERVER['HTTP_USER_AGENT'])) {
 	$log_string .= $_SERVER['HTTP_USER_AGENT'];
 }
-$log_string .= "\t";
-$log_string .= get_browser(null,true);
 $log_string .= "\n";
 
 if ( $debug_access_log ) {
 	// log it
-	file_put_contents( "debug/cyburphone_access.log",$log_string,FILE_APPEND );
+	file_put_contents( "debug/viciphone_access.log",$log_string,FILE_APPEND );
 }
 
 // Encryption Check
