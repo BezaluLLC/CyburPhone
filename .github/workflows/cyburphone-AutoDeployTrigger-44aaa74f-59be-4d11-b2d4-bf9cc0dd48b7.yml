@@ -35,17 +35,11 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }}
-          _targetLabelKey_: _targetLabel_
           registryUrl: bezdevopscontainers.azurecr.io
           registryUsername: ${{ secrets.CYBURPHONE_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CYBURPHONE_REGISTRY_PASSWORD }}
           containerAppName: cyburphone
           resourceGroup: RG-SharedAppResources
           runtimeStack: 'php:8.2'
+          builderStack: 'php'
           imageToBuild: bezdevopscontainers.azurecr.io/cyburphone:${{ github.sha }}
-          _buildArgumentsKey_: |
-            _buildArgumentsValues_
-
-
-
-
