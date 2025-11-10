@@ -6,7 +6,7 @@ CUSTOM_INI="/usr/local/etc/php/conf.d/zzz-custom.ini"
 
 # Build the ini contents
 {
-  # Always disable display_errors
+  # Always disable display_errors in production to prevent sensitive error details from being exposed to users.
   echo "display_errors = Off"
 
   # Optionally set memory_limit if provided
