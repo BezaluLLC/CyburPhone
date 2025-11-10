@@ -37,9 +37,8 @@ jobs:
           registryPassword: ${{ secrets.CYBURPHONE_REGISTRY_PASSWORD }}
           containerAppName: cyburphone
           resourceGroup: RG-SharedAppResources
-          runtimeStack: 'php:8.2'
           imageToBuild: bezdevopscontainers.azurecr.io/cyburphone:${{ github.sha }}
-          buildArguments: |
-            "ORYX_PHP_VERSION=8.2"
+
+
 
 
