@@ -41,9 +41,11 @@ jobs:
           registryPassword: ${{ secrets.CYBURPHONE_REGISTRY_PASSWORD }}
           containerAppName: cyburphone
           resourceGroup: RG-SharedAppResources
+          runtimeStack: 'php:8.2'
           imageToBuild: bezdevopscontainers.azurecr.io/cyburphone:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
+
 
 
 
