@@ -75,7 +75,7 @@ $log_string .= "\n";
 
 if ( $debug_access_log ) {
 	// log it
-	file_put_contents( "debug/viciphone_access.log",$log_string,FILE_APPEND );
+	file_put_contents( "debug/cyburphone_access.log",$log_string,FILE_APPEND );
 }
 
 // Encryption Check
