@@ -1,4 +1,4 @@
-﻿# Use the official PHP 8.2 with Apache image
+# Use the official PHP 8.2 with Apache image
 FROM php:8.2-apache
 
 # Enable Apache mod_rewrite
