@@ -5,7 +5,7 @@ on:
   # Automatically trigger it when detected changes in repo
   push:
     branches: 
-      [ aca-deploy ]
+      [ main ]
     paths:
     - '**'
     - '.github/workflows/cyburphone-AutoDeployTrigger-44aaa74f-59be-4d11-b2d4-bf9cc0dd48b7.yml'
@@ -44,3 +44,4 @@ jobs:
           imageToBuild: bezdevopscontainers.azurecr.io/cyburphone:${{ github.sha }}
           buildArguments: |
             "ORYX_PHP_VERSION=8.2"
+
