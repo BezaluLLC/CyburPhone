@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 set -e
 
 # If PHP_MEMORY_LIMIT is defined, drop a custom ini

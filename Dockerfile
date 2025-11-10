@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
-    dos2unix \
     && docker-php-ext-install \
     mysqli \
     pdo \
@@ -21,8 +20,7 @@ COPY . /var/www/html/
 
 # Copy in a tiny entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh \
-    && dos2unix /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/html/ \
     && chmod -R 755 /var/www/html/
