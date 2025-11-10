@@ -35,7 +35,6 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }}
-          _dockerfilePathKey_: _dockerfilePath_
           _targetLabelKey_: _targetLabel_
           registryUrl: bezdevopscontainers.azurecr.io
           registryUsername: ${{ secrets.CYBURPHONE_REGISTRY_USERNAME }}
@@ -45,5 +44,6 @@ jobs:
           imageToBuild: bezdevopscontainers.azurecr.io/cyburphone:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
+
 
 
